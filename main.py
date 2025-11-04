@@ -14,7 +14,7 @@ DRAW_BUTTON_Y_OFFSET = 75
 THICKNESS_ADJUST_OFFSET_Y = 20 # Pixels to click *below* the handle for a thinner line
 
 STOP_KEY = 'q'
-DRAWING_SPEED = 0 # This is the pause between each pyautogui action
+DRAWING_SPEED = 0.0001 # This is the pause between each pyautogui action
 
 # --- 2. HELPER FUNCTIONS ---
 
