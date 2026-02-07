@@ -141,18 +141,7 @@ def drawing_logic():
 
         canvas_x, canvas_y, canvas_w, canvas_h, canvas_center_x, canvas_center_y = canvas_info
         
-        update_status("Finding 'plus' icon...")
-        plus_coords = locate_robust(config.get('plus_icons', []))
-        
-        if plus_coords:
-            pyautogui.click(plus_coords)
-            time.sleep(0.5)
-            pyautogui.click(plus_coords.x, plus_coords.y - config.get('draw_button_y_offset', 75))
-            update_status("Drawing interface opened.")
-            time.sleep(1)
-        else:
-            update_status("Error: Could not find 'plus' icon. Exiting.")
-            return
+       
 
         update_status("Setting brush thickness...")
         thickness_handle_coords = locate_robust(config.get('slider_handles', []))
